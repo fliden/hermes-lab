@@ -1,0 +1,19 @@
+# Local environment and secrets
+.env
+*.env
+*.key
+
+# SQLite database files (Hermes local memory & sessions)
+*.db
+*.sqlite
+*.sqlite3
+
+# Python / Runtime caches
+__pycache__/
+*.pyc
+.venv/
+
+# Hermes agent data outputs or local state overrides
+.hermes/
+state-snapshots/
+backups/
