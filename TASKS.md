@@ -24,5 +24,5 @@
 - [x] Practice creating a custom skill manually and test auto-discovery
 
 ## Phase 5: Replication & Documentation
-- [ ] Document DigitalOcean 1-Click deployment steps and configuration guide
-- [ ] Commit finalized configuration templates to GitHub/GitLab
+- [x] Document DigitalOcean 1-Click deployment steps and configuration guide (`DEPLOYMENT.md`)
+- [x] Commit finalized configuration templates and documentation to Git repository
