@@ -1,19 +1,18 @@
 # Hermes Agent Learning & Deployment Checklist
 
-## Phase 1: Repository & Tracking Setup (Current Step)
+## Phase 1: Repository & Tracking Setup (Completed)
 - [x] Initialize Git repository
 - [x] Create `.gitignore` and `.env.example` templates
 - [x] Create `TASKS.md` tracking list
-- [ ] Create `scripts/vps-setup.sh` bootstrap script
+- [x] Configure deployment target: DigitalOcean 1-Click Install
 
-## Phase 2: VPS Provisioning & Infrastructure Setup
-- [ ] Spin up standard Ubuntu 24.04 LTS VPS instance (2 vCPUs, 2GB–4GB RAM)
+## Phase 2: DigitalOcean VPS Provisioning & Infrastructure Setup
+- [ ] Launch Droplet using DigitalOcean 1-Click Hermes Agent setup
 - [ ] Set up SSH access and basic security (UFW firewall, non-root user)
-- [ ] Transfer setup scripts or clone repo to VPS environment
-- [ ] Run `vps-setup.sh` to install Hermes and dependencies automatically
+- [ ] Clone/sync `hermes-lab` configuration to the Droplet
 
 ## Phase 3: Configuration & Baseline Verification
-- [ ] Execute `hermes setup` or set API key in configuration
+- [ ] Execute `hermes setup` or set API key in `.env` configuration
 - [ ] Verify core setup with `hermes doctor`
 - [ ] Verify CLI interactive chat functionality (`hermes`)
 - [ ] Test model switching (`hermes model`) using an API endpoint
@@ -25,5 +24,5 @@
 - [ ] Practice creating a custom skill manually and test auto-discovery
 
 ## Phase 5: Replication & Documentation
-- [ ] Finalize `vps-setup.sh` script to confirm 100% clean replication capability
+- [ ] Document DigitalOcean 1-Click deployment steps and configuration guide
 - [ ] Commit finalized configuration templates to GitHub/GitLab
