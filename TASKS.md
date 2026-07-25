@@ -19,9 +19,9 @@
 
 ## Phase 4: Core Agent Mechanics Mastery
 - [x] Test persistent session memory (verify memory recall across interactive sessions)
-- [ ] Inspect auto-generated skills directory (`~/.hermes/skills/`)
+- [x] Inspect auto-generated skills directory (`~/.hermes/skills/`)
 - [x] Execute a test task requiring terminal command execution (local bash tool execution on VPS)
-- [ ] Practice creating a custom skill manually and test auto-discovery
+- [x] Practice creating a custom skill manually and test auto-discovery
 
 ## Phase 5: Replication & Documentation
 - [ ] Document DigitalOcean 1-Click deployment steps and configuration guide
