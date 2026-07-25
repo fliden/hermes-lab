@@ -7,9 +7,9 @@
 - [x] Configure deployment target: DigitalOcean 1-Click Install
 
 ## Phase 2: DigitalOcean VPS Provisioning & Infrastructure Setup
-- [ ] Launch Droplet using DigitalOcean 1-Click Hermes Agent setup
-- [ ] Set up SSH access and basic security (UFW firewall, non-root user)
-- [ ] Clone/sync `hermes-lab` configuration to the Droplet
+- [x] Launch Droplet using DigitalOcean 1-Click Hermes Agent setup
+- [ ] Set up SSH access and basic security (UFW firewall, non-root user) *(Skipped)*
+- [ ] Clone/sync `hermes-lab` configuration to the Droplet *(Skipped)*
 
 ## Phase 3: Configuration & Baseline Verification
 - [ ] Execute `hermes setup` or set API key in `.env` configuration
