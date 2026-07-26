@@ -26,7 +26,7 @@
 ## Phase 5: Replication & Documentation
 - [x] Document DigitalOcean 1-Click deployment steps and configuration guide (`DEPLOYMENT.md`)
 - [x] Commit local deployment documentation to repository *(Done by Antigravity assistant)*
-- [ ] Sync/commit finalized Droplet configuration templates (`~/.hermes/config.yaml`, env, or skills) to `hermes-lab`
+- [ ] Sync/commit finalized Droplet configuration templates (`~/.hermes/config.yaml`, env, or skills) to `hermes-lab` *(Optional / Skipped)*
 
 ## Phase 6: Advanced Workflows & Git Integration (Completed)
 - [x] Install and authenticate GitHub CLI (`gh`) on VPS
