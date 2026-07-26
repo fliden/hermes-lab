@@ -34,9 +34,17 @@
 - [x] Create and check out feature branch
 - [x] Make code modifications and commit changes via agent terminal workflows
 
-## Phase 7: Telegram Gateway Integration
+## Phase 7: Messaging Gateway Integration (Telegram & Slack)
+
+### Telegram Integration
 - [x] Create bot via @BotFather and save HTTP API Token
 - [ ] Get personal User ID via `@userinfobot`
 - [ ] Run `hermes gateway setup` on VPS to configure Telegram
 - [ ] Start background service with `hermes gateway service start`
 - [ ] Send first Telegram message to agent & verify response
+
+### Slack Integration
+- [x] Create Slack App / Bot in Slack API portal & save OAuth/App tokens
+- [ ] Run `hermes gateway setup` on VPS to configure Slack integration
+- [ ] Start/restart background service with `hermes gateway service start`
+- [ ] Send first Slack message / @mention to agent & verify response

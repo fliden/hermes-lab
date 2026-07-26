@@ -100,10 +100,11 @@ Hermes Agent can operate on Git repositories and interact directly with GitHub v
 
 ---
 
-## 6. Telegram Gateway Integration
+## 6. Messaging Gateway Integration (Telegram & Slack)
 
-Connect Hermes Agent to Telegram for remote chat capabilities:
+Hermes Agent supports multi-platform remote chat via its Gateway daemon.
 
+### A. Telegram Setup
 1. **Bot Creation**:
    - Talk to [@BotFather](https://t.me/BotFather) on Telegram and run `/newbot`.
    - Save the provided **HTTP API Token**.
@@ -114,14 +115,30 @@ Connect Hermes Agent to Telegram for remote chat capabilities:
      ```bash
      hermes gateway setup
      ```
-   - Provide the Bot Token and authorized User ID when prompted.
-4. **Service Startup**:
-   - Start the background gateway daemon:
+   - Select **Telegram** and enter the Bot Token & authorized User ID.
+
+### B. Slack Setup
+1. **Slack App Creation**:
+   - Go to [api.slack.com/apps](https://api.slack.com/apps) and create a new App in your workspace.
+   - Enable **Socket Mode** (generates an App-Level Token `xapp-...`).
+   - Add Bot Token Scopes under OAuth & Permissions (`chat:write`, `app_mentions:read`, `im:history`, `im:write`, etc.).
+   - Install App to Workspace to generate the **Bot User OAuth Token** (`xoxb-...`).
+2. **Gateway Setup**:
+   - On the VPS, execute:
      ```bash
-     hermes gateway service start
+     hermes gateway setup
      ```
-5. **Messaging Verification**:
-   - Open your bot in Telegram and send a message (e.g., `Hello Hermes!`) to verify response delivery.
+   - Select **Slack** and enter your Bot OAuth Token (`xoxb-...`) and App-Level Token (`xapp-...`).
+
+### C. Service Daemon Management
+- Start or restart the background gateway daemon for all configured channels:
+  ```bash
+  hermes gateway service start
+  ```
+- Check gateway service status:
+  ```bash
+  hermes gateway service status
+  ```
 
 ---
 
@@ -133,4 +150,6 @@ Connect Hermes Agent to Telegram for remote chat capabilities:
 - [x] Memory persistence and bash command execution tested
 - [x] Custom skill creation and auto-discovery validated
 - [x] GitHub CLI (`gh`) authentication and feature branch git workflow verified
-- [ ] Telegram Gateway bot setup (`@BotFather` token & user ID) and service daemon started
+- [x] Telegram Gateway bot setup (`@BotFather` token created)
+- [x] Slack Gateway App setup (Bot OAuth token & App token configured)
+- [ ] Complete `hermes gateway setup` on VPS & start gateway daemon
