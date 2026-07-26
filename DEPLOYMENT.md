@@ -81,10 +81,30 @@ When asked to report system health or resource usage, run `uptime` and `free -h`
 
 ---
 
-## 5. Summary Checklist Status
+## 5. GitHub CLI & Git Workflow Integration
+
+Hermes Agent can operate on Git repositories and interact directly with GitHub via `gh`:
+
+1. **Install & Authenticate GitHub CLI**:
+   ```bash
+   gh auth login
+   ```
+2. **Repository Cloning & Branching**:
+   ```bash
+   gh repo clone <owner>/<repo>
+   cd <repo>
+   git checkout -b feature/my-new-feature
+   ```
+3. **Commit & Push Workflows**:
+   - Instruct Hermes to analyze code, make edits, and commit changes using git terminal execution.
+
+---
+
+## 6. Summary Checklist Status
 
 - [x] DigitalOcean 1-Click Droplet provisioned
 - [x] DeepInfra API key and `Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo` configured
 - [x] Tool initialization and `hermes doctor` verified
 - [x] Memory persistence and bash command execution tested
 - [x] Custom skill creation and auto-discovery validated
+- [x] GitHub CLI (`gh`) authentication and feature branch git workflow verified

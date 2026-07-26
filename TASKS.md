@@ -26,3 +26,9 @@
 ## Phase 5: Replication & Documentation
 - [x] Document DigitalOcean 1-Click deployment steps and configuration guide (`DEPLOYMENT.md`)
 - [x] Commit finalized configuration templates and documentation to Git repository
+
+## Phase 6: Advanced Workflows & Git Integration (Completed)
+- [x] Install and authenticate GitHub CLI (`gh`) on VPS
+- [x] Clone remote Git repository via `gh` / git
+- [x] Create and check out feature branch
+- [x] Make code modifications and commit changes via agent terminal workflows
