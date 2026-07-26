@@ -100,7 +100,32 @@ Hermes Agent can operate on Git repositories and interact directly with GitHub v
 
 ---
 
-## 6. Summary Checklist Status
+## 6. Telegram Gateway Integration
+
+Connect Hermes Agent to Telegram for remote chat capabilities:
+
+1. **Bot Creation**:
+   - Talk to [@BotFather](https://t.me/BotFather) on Telegram and run `/newbot`.
+   - Save the provided **HTTP API Token**.
+2. **User ID Retrieval**:
+   - Contact `@userinfobot` on Telegram to get your numeric **User ID** (used for authorization).
+3. **Gateway Setup**:
+   - On the VPS, execute:
+     ```bash
+     hermes gateway setup
+     ```
+   - Provide the Bot Token and authorized User ID when prompted.
+4. **Service Startup**:
+   - Start the background gateway daemon:
+     ```bash
+     hermes gateway service start
+     ```
+5. **Messaging Verification**:
+   - Open your bot in Telegram and send a message (e.g., `Hello Hermes!`) to verify response delivery.
+
+---
+
+## 7. Summary Checklist Status
 
 - [x] DigitalOcean 1-Click Droplet provisioned
 - [x] DeepInfra API key and `Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo` configured
@@ -108,3 +133,4 @@ Hermes Agent can operate on Git repositories and interact directly with GitHub v
 - [x] Memory persistence and bash command execution tested
 - [x] Custom skill creation and auto-discovery validated
 - [x] GitHub CLI (`gh`) authentication and feature branch git workflow verified
+- [ ] Telegram Gateway bot setup (`@BotFather` token & user ID) and service daemon started

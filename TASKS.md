@@ -33,3 +33,10 @@
 - [x] Clone remote Git repository via `gh` / git
 - [x] Create and check out feature branch
 - [x] Make code modifications and commit changes via agent terminal workflows
+
+## Phase 7: Telegram Gateway Integration
+- [x] Create bot via @BotFather and save HTTP API Token
+- [ ] Get personal User ID via `@userinfobot`
+- [ ] Run `hermes gateway setup` on VPS to configure Telegram
+- [ ] Start background service with `hermes gateway service start`
+- [ ] Send first Telegram message to agent & verify response
